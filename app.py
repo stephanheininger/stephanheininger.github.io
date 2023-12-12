@@ -34,7 +34,7 @@ def index():
         name = request.form.get('name')
         email = request.form.get('email')
         password = request.form.get('password')
-
+        """
         connection = create_connection()
         cursor = connection.cursor()
 
@@ -47,7 +47,7 @@ def index():
         finally:
             cursor.close()
             connection.close()
-
+"""
         return render_template('success.html')
 
     return render_template('index.html')
